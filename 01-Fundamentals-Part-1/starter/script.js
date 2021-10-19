@@ -64,4 +64,21 @@ console.log(x);
 //comparison operators
 console.log(ageVadim > ageVlad);
 console.log(ageVlad >= 18);
+
+
+//operator precedence
+const now = 2050;
+const ageVadim = now - 2000;
+const ageVlad = now - 2035;
+
+console.log(now - 2000 > now - 2035);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageVadim + ageVlad) / 2;
+console.log(averageAge);
+
 */
+
