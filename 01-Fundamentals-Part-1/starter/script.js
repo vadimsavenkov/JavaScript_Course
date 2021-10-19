@@ -20,7 +20,7 @@ console.log(typeof year);
 
 year = 1991;
 console.log(typeof year);
-*/
+
 
 //mutate variable
 let age = 30;
@@ -40,3 +40,28 @@ lastName = 'Savenkov';
 console.log(lastName);
 
 //you should always declare variable!
+
+//math operators
+const now = 2050;
+const ageVadim = now - 2000;
+const ageVlad = now - 2035;
+console.log(ageVadim);
+
+console.log(ageVadim / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+
+const firstName = 'Vadim';
+const lastName = 'Savenkov'
+console.log(firstName + ' ' + lastName);
+
+//assignment operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x +1
+console.log(x);
+
+//comparison operators
+console.log(ageVadim > ageVlad);
+console.log(ageVlad >= 18);
+*/
