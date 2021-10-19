@@ -92,3 +92,20 @@ const markHigherBMI = bmiMark > bmiJohn;
 
 console.log(bmiMark, bmiJohn, markHigherBMI);
 */
+
+//strings
+const firstName = 'Vadim';
+const job = 'engineer';
+const startYear = 1994;
+
+const me = firstName + ' started his job as an ' + job + ' in ' + startYear;
+console.log(me);
+
+//template literals using back ticks
+const meAgain = `${firstName} started his job as an ${job} in ${startYear}`;
+console.log(meAgain);
+
+//convinient way to do multiple lines instead of \n\
+console.log(`String
+with multiple
+lines`);
