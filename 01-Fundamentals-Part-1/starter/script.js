@@ -91,7 +91,6 @@ const bmiJohn = massJohn / heightJohn ** 2;
 const markHigherBMI = bmiMark > bmiJohn;
 
 console.log(bmiMark, bmiJohn, markHigherBMI);
-*/
 
 //strings
 const firstName = 'Vadim';
@@ -109,3 +108,28 @@ console.log(meAgain);
 console.log(`String
 with multiple
 lines`);
+
+//if/else statements
+//control structure examples
+const age = 15;
+
+if (age >= 18) {
+    console.log(`Sarah can have her driver's license!`)
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sara is too young. She should wait another ${yearsLeft} years!`)
+}
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+
+*/
+
+
