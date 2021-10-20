@@ -146,13 +146,11 @@ if (bmiMark > bmiJohn) {
     console.log(`Mark's BMI(${bmiMark}) is lower than John's(${bmiJohn})!`)
 }
 
-*/
-
 //time conversion
 
 //convert string to number
 const inputYear = '1971';
-//convert to a number 
+//convert to a number
 console.log(Number(inputYear), inputYear);
 console.log(inputYear + 18);
 console.log(Number(inputYear) + 18);
@@ -164,4 +162,33 @@ console.log('I am ' + 50 + ' years old');
 
 let n = '1' + 1; // 11 plus operator convert to a string
 n = n - 1;
-console.log(n); // 10 minus operator convert to a number  
+console.log(n); // 10 minus operator convert to a number
+
+//5 falsy numberd 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean('Vadim')); //true
+console.log(Boolean({})); //true
+console.log(Boolean('')); //false
+
+const money = 1;
+if (money) {
+    console.log("Don't spend in all!");
+} else {
+    console.log('You should get a job!');
+}
+
+let height;
+if (height) {
+    console.log('YAY! Hight is defined!');
+} else {
+    console.log('Hight is undefined!');
+}
+
+*/
+
+
+
+
+
