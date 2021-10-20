@@ -148,10 +148,20 @@ if (bmiMark > bmiJohn) {
 
 */
 
+//time conversion
+
 //convert string to number
 const inputYear = '1971';
-console.log(Number(inputYear));
+//convert to a number 
+console.log(Number(inputYear), inputYear);
 console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+//convert to a string
+console.log(String(18), 18);
 
+//type coersion
+console.log('I am ' + 50 + ' years old');
 
-
+let n = '1' + 1; // 11 plus operator convert to a string
+n = n - 1;
+console.log(n); // 10 minus operator convert to a number  
