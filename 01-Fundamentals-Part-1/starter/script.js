@@ -210,7 +210,63 @@ if (favorite !== 23) { // 23 === 23
     console.log('What?! Why this number is not 23?');
 }
 
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // and operator
+
+console.log(hasDriversLicense || hasGoodVision); // or operator
+
+console.log(!hasDriversLicense); // not operator
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('I am able to drive!');
+// } else {
+//     console.log('Someone else will drive!');
+// }
+
+const isTired = true; // C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('I am able to drive!');
+} else {
+    console.log('Someone else will drive!');
+}
+
+
+
+// third code challenge
+
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+const averageScoreKoallas = (88 + 100 + 110) / 3;
+console.log(averageScoreDolphins, averageScoreKoallas);
+
+
+if (averageScoreDolphins > averageScoreKoallas) {
+    console.log('Dolphins is the winner!');
+} else if (averageScoreDolphins < averageScoreKoallas) {
+    console.log('Koalas is the winner!');
+} else if (averageScoreKoallas === averageScoreDolphins) {
+    console.log('It is a draw!');
+}
+
+const averageScoreDolphins = (89 + 95 + 123) / 3;
+const averageScoreKoallas = (89 + 95 + 123) / 3;
+const minimumScore = 100;
+console.log(averageScoreDolphins, averageScoreKoallas);
+
+if (averageScoreDolphins > averageScoreKoallas && averageScoreDolphins > minimumScore) {
+    console.log('Dolphins is the winner!');
+} else if (averageScoreDolphins < averageScoreKoallas && averageScoreKoallas > minimumScore) {
+    console.log('Koalas is the winner!');
+} else if (averageScoreKoallas === averageScoreDolphins && averageScoreKoallas === minimumScore && averageScoreDolphins === minimumScore) {
+    console.log('It is a draw!');
+} else {
+    console.log('Nobody wins!')
+}
+
 */
-
-
-
