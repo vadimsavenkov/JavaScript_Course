@@ -186,9 +186,31 @@ if (height) {
     console.log('Hight is undefined!');
 }
 
+// == vs === strict equality operator
+const age = 18;
+if (age === 18) console.log('You are an adult!(strict)');
+
+if (age == 18) console.log('You are an adult!(loose)');
+
+const favorite = Number(prompt('What is you favorite number?'));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { // 23 === 23
+    console.log('Cool! 23 is a nice number!');
+} else if (favorite === 7) { // 23 === 23
+    console.log('7 is also nice number!');
+} else {
+    console.log('Common! Number is not 23 or 7!')
+}
+
+// not equiality operator
+
+if (favorite !== 23) { // 23 === 23
+    console.log('What?! Why this number is not 23?');
+}
+
 */
-
-
 
 
 
