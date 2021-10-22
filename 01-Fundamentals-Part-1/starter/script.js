@@ -313,8 +313,20 @@ if (day === 'Monday') {
 
 */
 
-const age = 25;
+const age = 17;
 //age >= 18 ? console.log('I allowed to drink wine!') : console.log('I can drink water only!');
 
 const drink = age >= 18 ? 'wine is allowed' : 'water only';
 console.log(drink);
+
+let drinkAgain;
+
+if (age >= 18) {
+    drinkAgain = 'wine is allowed';
+} else {
+    drinkAgain = 'water only';
+}
+console.log(drinkAgain);
+
+//using ternary operator with template literal 
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water only'}`)
