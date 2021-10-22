@@ -270,3 +270,27 @@ if (averageScoreDolphins > averageScoreKoallas && averageScoreDolphins > minimum
 }
 
 */
+
+const day = 'Saturday';
+
+switch (day) {
+    case 'Monday':
+        console.log('Plan course structure');
+        console.log('Going to coding meetup');
+        break;
+    case 'Tuesday':
+        console.log('Prepaire theory videos');
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('Write code examples');
+        break;
+    case 'Friday':
+        console.log('Record videos');
+        break;
+    case 'Saturday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day');
+}
