@@ -329,10 +329,7 @@ console.log(drinkAgain);
 //using ternary operator with template literal
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water only'}`)
 
-*/
-
-// Coding Challenge #4 
-
+// Coding Challenge #4
 
 const bill = 400;
 // let tip;
@@ -346,3 +343,5 @@ const bill = 400;
 
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+
+*/
