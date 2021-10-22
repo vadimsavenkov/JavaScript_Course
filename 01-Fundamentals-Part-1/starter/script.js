@@ -269,7 +269,6 @@ if (averageScoreDolphins > averageScoreKoallas && averageScoreDolphins > minimum
     console.log('Nobody wins!')
 }
 
-*/
 
 const day = 'Saturday';
 
@@ -293,4 +292,23 @@ switch (day) {
         break;
     default:
         console.log('Not a valid day');
+}
+
+*/
+
+const day = 'Paturday';
+
+if (day === 'Monday') {
+    console.log('Plan course structure');
+    console.log('Going to coding meetup');
+} else if (day === 'Tuesday') {
+    console.log('Prepaire theory videos');
+} else if (day === 'Wednesday' || day === 'Thursday') {
+    console.log('Write code examples');
+} else if (day === 'Friday') {
+    console.log('Record videos');
+} else if (day === 'Saturday' || day === 'Sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day');
 }
