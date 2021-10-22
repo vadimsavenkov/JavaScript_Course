@@ -311,8 +311,6 @@ if (day === 'Monday') {
     console.log('Not a valid day');
 }
 
-*/
-
 const age = 17;
 //age >= 18 ? console.log('I allowed to drink wine!') : console.log('I can drink water only!');
 
@@ -328,5 +326,23 @@ if (age >= 18) {
 }
 console.log(drinkAgain);
 
-//using ternary operator with template literal 
+//using ternary operator with template literal
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water only'}`)
+
+*/
+
+// Coding Challenge #4 
+
+
+const bill = 400;
+// let tip;
+
+// if (bill >= 50 && bill <= 300) {
+//     tip = 15 / 100;
+// } else {
+//     tip = 20 / 100
+// }
+// console.log(`The bill was ${bill}, the tip was ${bill * tip}, and the total value was ${bill + (bill * tip)}`);
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
