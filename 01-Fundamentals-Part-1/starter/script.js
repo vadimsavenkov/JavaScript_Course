@@ -294,8 +294,6 @@ switch (day) {
         console.log('Not a valid day');
 }
 
-*/
-
 const day = 'Paturday';
 
 if (day === 'Monday') {
@@ -312,3 +310,11 @@ if (day === 'Monday') {
 } else {
     console.log('Not a valid day');
 }
+
+*/
+
+const age = 25;
+//age >= 18 ? console.log('I allowed to drink wine!') : console.log('I can drink water only!');
+
+const drink = age >= 18 ? 'wine is allowed' : 'water only';
+console.log(drink);
