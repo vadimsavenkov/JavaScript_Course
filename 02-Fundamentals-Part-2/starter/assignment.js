@@ -32,13 +32,17 @@ const percentageOfWorld2 = function (population) {
 }
 
 const populationChina = percentageOfWorld2(1441);
-console.log(populationChina);
-
 const populationCanada = percentageOfWorld2(38);
-console.log(populationCanada);
-
 const populationRussia = percentageOfWorld2(146);
-console.log(populationRussia);
+
+console.log(populationChina, populationCanada, populationRussia);
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const populationChina = percentageOfWorld3(1441);
+const populationCanada = percentageOfWorld3(38);
+const populationRussia = percentageOfWorld3(146);
+
+console.log(populationChina, populationCanada, populationRussia)
 
 */
-
