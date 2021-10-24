@@ -259,8 +259,6 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 
 console.log(total);
 
-*/
-
 //objects
 //the simpliest way to create object
 //order is important in arrays, not in objects!
@@ -271,3 +269,37 @@ const Vadim = {
     job: 'developer',
     friends: ['Nick', 'Steve', 'Peter']
 };
+
+*/
+
+const Vadim = {
+    firstName: 'Vadim',
+    lastName: 'Savenkov',
+    age: 2021 - 1971,
+    job: 'developer',
+    friends: ['Nick', 'Steve', 'Peter']
+};
+
+console.log(Vadim);
+//dot notation
+console.log(Vadim.job);
+//bracket notation
+console.log(Vadim['job']);
+
+const nameKey = 'Name';
+console.log(Vadim['first' + nameKey]);
+console.log(Vadim['last' + nameKey]);
+
+//create popup window
+const interestedIn = prompt('What do you want to know about Vadim! Choose between firstName, lastName, age, job and friends');
+if (Vadim[interestedIn]) {
+    console.log(Vadim[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+}
+
+Vadim.location = 'Canada';
+Vadim['linkedIn'] = '@vadimsavenkov';
+console.log(Vadim);
+
+console.log(`${Vadim.firstName} has ${Vadim.friends.length} friends, and his best friend is called ${Vadim.friends[0]}`);
