@@ -84,4 +84,25 @@ if (!neighbours.includes('Germany')) {
 //replace country
 neighbours[neighbours.indexOf('Pakistan')] = 'Kurdistan';
 console.log(neighbours);
+//array
+const neighbours = ['USA', 'Russia'];
+
+//object aasignment
+
+const myCountry = {
+    country: 'Canada',
+    capital: 'Ottawa',
+    language: 'English',
+    population: 38,
+    neighbours: ['USA', 'Russia']
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} million english-speaking people, ${myCountry.neighbours.length} neighbouring country and a capital called ${myCountry.capital}`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+
 */
+
