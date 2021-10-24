@@ -53,5 +53,117 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1991);
 console.log(age1, age2)
 
-*/
 
+//arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearUntilRetirement = (birthYear, firstName) => {
+    const age = 2021 - birthYear;
+    const retirement = 65 - age;
+    //return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
+
+console.log(yearUntilRetirement(1971, 'Vadim'));
+console.log(yearUntilRetirement(1977, 'Alex'));
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+//version1 arrow function
+const yearUntilRetirement = (birthYear, firstName) => {
+    const age = 2021 - birthYear;
+    const retirement = 65 - age;
+    //return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
+console.log(yearUntilRetirement(1971, 'Vadim'));
+
+const calcAge = function (birthYear) {
+    return 2021 - birthYear;
+}
+
+const yearUntilRetirement = function (birthYear, firstName) {
+    //const age = 2021 - birthYear;
+    const age = calcAge(birthYear)
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+}
+
+console.log(yearUntilRetirement(1971, 'Vadim'));
+console.log(yearUntilRetirement(1951, 'Alex'));
+
+
+// third code challenge part1
+
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+const averageScoreKoallas = (88 + 100 + 110) / 3;
+console.log(averageScoreDolphins, averageScoreKoallas);
+
+
+if (averageScoreDolphins > averageScoreKoallas) {
+    console.log('Dolphins is the winner!');
+} else if (averageScoreDolphins < averageScoreKoallas) {
+    console.log('Koalas is the winner!');
+} else if (averageScoreKoallas === averageScoreDolphins) {
+    console.log('It is a draw!');
+}
+
+const averageScoreDolphins = (89 + 95 + 123) / 3;
+const averageScoreKoallas = (89 + 95 + 123) / 3;
+const minimumScore = 100;
+console.log(averageScoreDolphins, averageScoreKoallas);
+
+if (averageScoreDolphins > averageScoreKoallas && averageScoreDolphins > minimumScore) {
+    console.log('Dolphins is the winner!');
+} else if (averageScoreDolphins < averageScoreKoallas && averageScoreKoallas > minimumScore) {
+    console.log('Koalas is the winner!');
+} else if (averageScoreKoallas === averageScoreDolphins && averageScoreKoallas === minimumScore && averageScoreDolphins === minimumScore) {
+    console.log('It is a draw!');
+} else {
+    console.log('Nobody wins!')
+}
+
+//coding challenge #1
+//create function to calculate average
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3, 4, 5));
+
+//Test1
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win: ${avgDolphins} vs ${avgKoalas}`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Dolphins win: ${avgKoalas} vs ${avgDolphins}`);
+    } else {
+        console.log('No team wins...');
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(300, 100);
+
+*/
