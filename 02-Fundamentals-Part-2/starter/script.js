@@ -270,8 +270,6 @@ const Vadim = {
     friends: ['Nick', 'Steve', 'Peter']
 };
 
-*/
-
 const Vadim = {
     firstName: 'Vadim',
     lastName: 'Savenkov',
@@ -302,4 +300,41 @@ Vadim.location = 'Canada';
 Vadim['linkedIn'] = '@vadimsavenkov';
 console.log(Vadim);
 
+//little challenge
 console.log(`${Vadim.firstName} has ${Vadim.friends.length} friends, and his best friend is called ${Vadim.friends[0]}`);
+
+const Vadim = {
+    firstName: 'Vadim',
+    lastName: 'Savenkov',
+    birthYear: 1971,
+    job: 'developer',
+    friends: ['Nick', 'Steve', 'Peter'],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+    //     return 2021 - birthYear
+    // }
+
+    // calcAge: function () {
+    //     console.log(this);
+    //     return 2021 - this.birthYear
+    // }
+
+    calcAge: function () {
+        console.log(this);
+        this.age = 2021 - this.birthYear;
+        return this.age;
+    },
+    //using
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} - year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
+};
+
+console.log(Vadim.calcAge());
+//console.log(Vadim['calcAge'](1991));
+console.log(Vadim.calcAge());
+console.log(Vadim.getSummary());
+
+*/
+
