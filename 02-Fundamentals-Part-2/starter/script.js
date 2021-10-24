@@ -177,7 +177,7 @@ console.log(friends);
 const years1 = new Array(1991, 1954, 2012, 2001);
 console.log(years1);
 
-//log to console 
+//log to console
 console.log(friends[2]);
 console.log(friends[friends.length - 1]);
 console.log(friends.length);
@@ -203,7 +203,6 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
 
 //basic array operations - methods
 const friends = ['Nick', 'Steve', 'Peter'];
@@ -231,3 +230,33 @@ console.log(friends.includes('Jay'));
 if (friends.includes('Jay')) {
     console.log('Jay is your friend!')
 }
+
+const bill = 400;
+// let tip;
+
+// if (bill >= 50 && bill <= 300) {
+//     tip = 15 / 100;
+// } else {
+//     tip = 20 / 100
+// }
+// console.log(`The bill was ${bill}, the tip was ${bill * tip}, and the total value was ${bill + (bill * tip)}`);
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+
+
+//coding challenge #2
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
+
+console.log(total);
+
+*/
