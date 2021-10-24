@@ -166,7 +166,6 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(300, 100);
 
-*/
 // Arrays
 const friend1 = 'Nick';
 const friend2 = 'Steve';
@@ -204,5 +203,31 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
 
 //basic array operations - methods
+const friends = ['Nick', 'Steve', 'Peter'];
+
+//use push method to add element at the end
+friends.push('Jay');
+
+const newlength = friends.push('Jay');
+console.log(friends);
+console.log(newlength);
+//add to the begining
+friends.unshift('John');
+console.log(friends);
+
+// remove last
+friends.pop()
+console.log(friends);
+
+// remove first
+friends.shift()
+console.log(friends);
+
+console.log(friends.includes('Jay'));
+
+if (friends.includes('Jay')) {
+    console.log('Jay is your friend!')
+}
