@@ -260,3 +260,14 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(total);
 
 */
+
+//objects
+//the simpliest way to create object
+//order is important in arrays, not in objects!
+const Vadim = {
+    firstName: 'Vadim',
+    lastName: 'Savenkov',
+    age: 2021 - 1971,
+    job: 'developer',
+    friends: ['Nick', 'Steve', 'Peter']
+};
