@@ -104,5 +104,46 @@ console.log(myCountry.population);
 myCountry['population'] -= 2;
 console.log(myCountry.population);
 
-*/
+for (let num = 1; num <= 50; num++) {
+    console.log(`Voter number ${num} is currently voting!'`)
+};
 
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+const populations = [1441,
+    38,
+    146,
+    1397
+];
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages);
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
+if (percentages2 === percentages) {
+    console.log('Problem is solved!')
+}
+
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden',
+        'Russia']];
+
+for (let i = listOfNeighbours.length - 3; i >= 0; i--) {
+    console.log(listOfNeighbours[i]);
+    for (let con = listOfNeighbours[0].length - 1; con >= 1;
+        con--) {
+        console.log(`Neighbour: ${listOfNeighbours[0][0]}`)
+    }
+}
+
+*/
