@@ -138,12 +138,16 @@ const listOfNeighbours = [
     ['Norway', 'Sweden',
         'Russia']];
 
-for (let i = listOfNeighbours.length - 3; i >= 0; i--) {
-    console.log(listOfNeighbours[i]);
-    for (let con = listOfNeighbours[0].length - 1; con >= 1;
-        con--) {
-        console.log(`Neighbour: ${listOfNeighbours[0][0]}`)
-    }
-}
-
+//my version
+// for (let i = listOfNeighbours.length - 3; i >= 0; i--) {
+//     console.log(listOfNeighbours[i]);
+//     for (let con = listOfNeighbours[0].length - 1; con >= 1;
+//         con--) {
+//         console.log(`Neighbour: ${listOfNeighbours[0][0]}`)
+//     }
+// }
+//answer
+for (let i = 0; i < listOfNeighbours.length; i++)
+    for (let y = 0; y < listOfNeighbours[i].length; y++)
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
 */
