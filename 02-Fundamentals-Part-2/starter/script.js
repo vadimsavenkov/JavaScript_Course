@@ -336,5 +336,53 @@ console.log(Vadim.calcAge());
 console.log(Vadim.calcAge());
 console.log(Vadim.getSummary());
 
-*/
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 120;
+// const heightJohn = 1.95;
+// const bmiMark = massMark / heightMark ** 2;
+// const bmiJohn = massJohn / heightJohn ** 2;
 
+// console.log(bmiMark, bmiJohn);
+
+// if (bmiMark > bmiJohn) {
+//     console.log(`Mark's BMI(${bmiMark}) is higher than John's(${bmiJohn})!`)
+// } else {
+//     console.log(`Mark's BMI(${bmiMark}) is lower than John's(${bmiJohn})!`)
+// }
+
+const dataMark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        console.log(this);
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+const dataJohn = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        console.log(this);
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+
+};
+
+dataMark.calcBMI();
+dataJohn.calcBMI();
+console.log(dataMark.bmi, dataJohn.bmi)
+
+if (dataMark.bmi > dataJohn.bmi) {
+    console.log(`${dataMark.fullName}'s BMI(${dataMark.bmi}) is higher than ${dataJohn.fullName}'s BMI(${dataJohn.bmi})`);
+} else if (dataJohn.bmi > dataMark.bmi) {
+    console.log(`${dataJohn.fullName}'s BMI(${dataJohn.bmi}) is higher than ${dataMark.fullName}'s BMI(${dataMark.bmi})`);
+};
+
+*/
