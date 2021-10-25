@@ -403,3 +403,53 @@ if (dataMark.bmi > dataJohn.bmi) {
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep}`);
 }
+
+//create array
+const Vadim = [
+    'Vadim',
+    'Savenkov',
+    2021 - 1971,
+    'engineer',
+    ['Nick', 'Steve', 'Peter'],
+    true
+];
+
+const types = [];
+//loop array
+for (let i = 0; i < Vadim.length; i++) {
+    //reading Vadim's array
+    console.log(Vadim[i], typeof Vadim[i])
+    //filling types array
+    // types[i] = typeof Vadim[i];
+    types.push(typeof Vadim[i]);
+}
+
+console.log(types);
+
+const years = [1991,
+    2007,
+    1969,
+    2020
+]
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+//continue statement
+console.log('---ONLY STRINGS---')
+for (let i = 0; i < Vadim.length; i++) {
+    if (typeof Vadim[i] !== 'string') continue;
+
+    console.log(Vadim[i], typeof Vadim[i])
+}
+
+//break statement
+console.log('---BREAK WITH NUMBER---')
+for (let i = 0; i < Vadim.length; i++) {
+    if (typeof Vadim[i] !== 'number') break;
+
+    console.log(Vadim[i], typeof Vadim[i])
+}
