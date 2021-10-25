@@ -385,8 +385,6 @@ if (dataMark.bmi > dataJohn.bmi) {
     console.log(`${dataJohn.fullName}'s BMI(${dataJohn.bmi}) is higher than ${dataMark.fullName}'s BMI(${dataMark.bmi})`);
 };
 
-*/
-
 //loops
 // console.log('Lifting weights repetition 1 ');
 // console.log('Lifting weights repetition 2 ');
@@ -453,3 +451,27 @@ for (let i = 0; i < Vadim.length; i++) {
 
     console.log(Vadim[i], typeof Vadim[i])
 }
+
+//looping backwards
+const Vadim = [
+    'Vadim',
+    'Savenkov',
+    2021 - 1971,
+    'engineer',
+    ['Nick', 'Steve', 'Peter'],
+    true
+];
+
+for (let i = Vadim.length - 1; i >= 0; i--) {
+    console.log(i, Vadim[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-----Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weights repetition ${rep}`);
+    }
+}
+
+*/
