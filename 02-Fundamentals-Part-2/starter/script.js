@@ -474,8 +474,6 @@ for (let exercise = 1; exercise < 4; exercise++) {
     }
 }
 
-*/
-
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting weights repetition ${rep}`);
 // }
@@ -495,3 +493,42 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log('Loop is about to end...')
 }
+
+*/
+
+//coding challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(bills, tips);
+// const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
+// console.log(total);
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]))
+    totals.push(tips[i] + bills[i]);
+}
+console.log(bills, tips, totals);
+
+//const arr = [];
+const calcAve = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    //console.log(sum);
+    return sum / arr.length;
+}
+
+//console.log(calcAve([2, 3, 7]));
+console.log(calcAve(totals));
+console.log(calcAve(tips));
