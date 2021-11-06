@@ -6,7 +6,7 @@ const countriesContainer = document.querySelector('.countries');
 
 
 ///////////////////////////////////////
-
+//https://github.com/public-apis/public-apis/blob/master/README.md#geocoding
 
 //old way hadling asyns js
 const request = new XMLHttpRequest();
