@@ -23,6 +23,8 @@
 			//Create a box geometry a material to color it 
 			const geometry = new THREE.BoxGeometry();
 			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			
+			//add a mesh object that takes a geometry, and applies a material to it
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 
