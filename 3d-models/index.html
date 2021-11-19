@@ -13,23 +13,24 @@
 			//Create three things: scene, camera and renderer, so that we can render the scene with camera
 			const scene = new THREE.Scene();
 
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+			const camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 0.1, 10000 );
 
 			//creating the renderer instance and setting the sizing to render our app
 			const renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 			
-			//Create a box geometry a material to color it 
+			//Create a box geometry a material to color (libxlsxwriter colors: 0x00ff00) it 
 			const geometry = new THREE.BoxGeometry();
-			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			const material = new THREE.MeshBasicMaterial( { color: 0xFF6600 } );
 			
 			//add a mesh object that takes a geometry, and applies a material to it
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 
-			camera.position.z = 5;
-
+			camera.position.z = 15;
+			
+			//Create an animate loop for rendering
 			const animate = function () {
 				requestAnimationFrame( animate );
 
