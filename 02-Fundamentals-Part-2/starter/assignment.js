@@ -150,4 +150,48 @@ const listOfNeighbours = [
 for (let i = 0; i < listOfNeighbours.length; i++)
     for (let y = 0; y < listOfNeighbours[i].length; y++)
         console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+Write a function:
+
+function solution(A);
+
+that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+
+For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+
+Given A = [1, 2, 3], the function should return 4.
+
+Given A = [−1, −3], the function should return 1.
+
+Write an efficient algorithm for the following assumptions:
+
+N is an integer within the range [1..100,000];
+each element of array A is an integer within the range [−1,000,000..1,000,000].
+
+//incomplete solution
+function solution(A) {
+  for (i = 1; i < 1000000; i++) {
+    if(!A.includes(i)) return i;
+  }
+}
+
+function findNumber(values) {
+  let result = [];
+
+  for (let i = 0; i < values.length; ++i) {
+    if (0 <= values[i]) {
+      result[values[i]] = true;
+    }
+  }
+
+  for (let i = 1; i <= result.length; ++i) {
+    if (undefined === result[i]) {
+      return i;
+    }
+  }
+
+  return 1
+  
+}
+
 */
